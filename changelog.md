@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.3](https://github.com/ehmpathy/with-cache-normalization/compare/v1.0.2...v1.0.3) (2023-08-07)
+
+
+### Bug Fixes
+
+* **deps:** bump domain-objects to remove excessive length cache key bug ([cbcd7a1](https://github.com/ehmpathy/with-cache-normalization/commit/cbcd7a1f62b9b463291f13439d484b3e015565d8))
+
 ## [1.0.2](https://github.com/ehmpathy/with-cache-normalization/compare/v1.0.1...v1.0.2) (2023-08-07)
 
 
