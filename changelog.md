@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.2](https://github.com/ehmpathy/with-cache-normalization/compare/v1.0.1...v1.0.2) (2023-08-07)
+
+
+### Bug Fixes
+
+* **denorm:** handle null values correctly in denormalization ([fabbe78](https://github.com/ehmpathy/with-cache-normalization/commit/fabbe7873c59cf0d18f7651a5b6e78c9bc6947ea))
+
 ## [1.0.1](https://github.com/ehmpathy/with-cache-normalization/compare/v1.0.0...v1.0.1) (2023-08-07)
 
 
