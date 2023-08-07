@@ -1,6 +1,7 @@
 export {
   NormalizeCacheValueMethod,
   NormalizeCacheValueMethodOutput,
+  SerializableObject,
 } from './domain/NormalizeCacheValueMethod';
 export {
   normalizeDomainObjectReferences,
