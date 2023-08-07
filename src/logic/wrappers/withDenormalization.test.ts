@@ -70,4 +70,14 @@ describe('withDenormalization', () => {
     // prove that it was denormalized successfully
     expect(found).toEqual({ colors: ['green', 'blue'] });
   });
+  it('should preserve the shape of null', async () => {
+    // set an item which contains an array
+    await cache.set('__key__', { thread: null });
+
+    // lookup the item with denormalization
+    const found = await cacheWithDenormalization.get('__key__');
+
+    // prove that it was denormalized successfully
+    expect(found).toEqual({ thread: null });
+  });
 });

@@ -34,8 +34,7 @@ const recursivelyHydrateCachedValueReferences = async ({
   }
 
   // since its not a string, if its not an object either, no chance of any further hydration
-  if (typeof value !== 'object' || value === null)
-    return { value, references: {} };
+  if (typeof value !== 'object' || value === null) return value;
 
   // since its an object, attempt hydration on each of the keys
   const entries = Object.entries(value);
