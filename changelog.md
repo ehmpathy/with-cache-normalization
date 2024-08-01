@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.5](https://github.com/ehmpathy/with-cache-normalization/compare/v1.0.4...v1.0.5) (2024-08-01)
+
+
+### Bug Fixes
+
+* **practs:** bump practs to latest best ([bf42137](https://github.com/ehmpathy/with-cache-normalization/commit/bf42137dec3eca8e4c3898395cbde926d7a5d066))
+
 ## [1.0.4](https://github.com/ehmpathy/with-cache-normalization/compare/v1.0.3...v1.0.4) (2024-08-01)
 
 
