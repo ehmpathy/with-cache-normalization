@@ -2,7 +2,7 @@
   "name": "with-cache-normalization",
   "author": "ehmpathy",
   "description": "🗜️ normalize your cache -> get automatic cache updates ✨",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "repository": "ehmpathy/with-cache-normalization",
   "homepage": "https://github.com/ehmpathy/with-cache-normalization",
   "keywords": [
