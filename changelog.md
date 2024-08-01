@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.4](https://github.com/ehmpathy/with-cache-normalization/compare/v1.0.3...v1.0.4) (2024-08-01)
+
+
+### Bug Fixes
+
+* **deps:** bump domain-objects for literal ([a1ca74a](https://github.com/ehmpathy/with-cache-normalization/commit/a1ca74adebdcb9aa8938bb15d314c6baea20208f))
+
 ## [1.0.3](https://github.com/ehmpathy/with-cache-normalization/compare/v1.0.2...v1.0.3) (2023-08-07)
 
 
