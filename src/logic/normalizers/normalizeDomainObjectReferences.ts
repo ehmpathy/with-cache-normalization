@@ -1,3 +1,4 @@
+import { UnexpectedCodePathError } from '@ehmpathy/error-fns';
 import { DomainObject, getUniqueIdentifierSlug } from 'domain-objects';
 
 import {
@@ -5,7 +6,6 @@ import {
   NormalizeCacheValueMethodOutput,
   SerializableObject,
 } from '../../domain/NormalizeCacheValueMethod';
-import { UnexpectedCodePathError } from '../../utils/errors/UnexpectedCodePathError';
 import { CACHE_NORMALIZATION_FOREIGN_KEY_REGEXP } from '../wrappers/withDenormalization';
 
 export const getCacheReferenceKeyForDomainObject = (

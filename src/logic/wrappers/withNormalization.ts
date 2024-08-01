@@ -1,10 +1,10 @@
+import { UnexpectedCodePathError } from '@ehmpathy/error-fns';
 import { SimpleAsyncCache, SimpleCache } from 'with-simple-caching';
 
 import {
   NormalizeCacheValueMethod,
   SerializableObject,
 } from '../../domain/NormalizeCacheValueMethod';
-import { UnexpectedCodePathError } from '../../utils/errors/UnexpectedCodePathError';
 import {
   CACHE_NORMALIZATION_FOREIGN_KEY_REGEXP,
   withDenormalization,
