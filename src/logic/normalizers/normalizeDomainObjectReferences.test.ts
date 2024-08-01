@@ -1,4 +1,4 @@
-import { DomainEntity, DomainValueObject } from 'domain-objects';
+import { DomainEntity, DomainLiteral } from 'domain-objects';
 
 import {
   getCacheReferenceKeyForDomainObject,
@@ -20,7 +20,7 @@ interface Geocode {
   latitude: number;
   longitude: number;
 }
-class Geocode extends DomainValueObject<Geocode> implements Geocode {}
+class Geocode extends DomainLiteral<Geocode> implements Geocode {}
 
 describe('getCacheReferenceKeyForDomainObject', () => {
   it('should define a good looking key for an example domain entity', () => {

@@ -1,6 +1,6 @@
 import {
   DomainEntity,
-  DomainValueObject,
+  DomainLiteral,
   deserialize,
   serialize,
 } from 'domain-objects';
@@ -29,7 +29,7 @@ interface Geocode {
   latitude: number;
   longitude: number;
 }
-class Geocode extends DomainValueObject<Geocode> implements Geocode {}
+class Geocode extends DomainLiteral<Geocode> implements Geocode {}
 
 describe('withNormalization', () => {
   beforeEach(() => jest.clearAllMocks());

@@ -56,7 +56,7 @@
     "postinstall": "[ -d .git ] && npx husky install || exit 0"
   },
   "dependencies": {
-    "domain-objects": "^0.13.2",
+    "domain-objects": "^0.22.1",
     "with-simple-caching": "^0.11.3"
   },
   "devDependencies": {
