@@ -1,6 +1,6 @@
-import { SimpleAsyncCache, SimpleCache } from 'with-simple-cache';
+import type { SimpleAsyncCache, SimpleCache } from 'with-simple-cache';
 
-import { SerializableObject } from '../../domain/NormalizeCacheValueMethod';
+import type { SerializableObject } from '../../domain/NormalizeCacheValueMethod';
 
 /**
  * a utility which makes it easy to add normalization to caches which only persist string values

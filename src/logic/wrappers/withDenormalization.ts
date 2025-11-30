@@ -1,6 +1,6 @@
-import { SimpleAsyncCache, SimpleCache } from 'with-simple-cache';
+import type { SimpleAsyncCache, SimpleCache } from 'with-simple-cache';
 
-import { SerializableObject } from '../../domain/NormalizeCacheValueMethod';
+import type { SerializableObject } from '../../domain/NormalizeCacheValueMethod';
 
 export const CACHE_NORMALIZATION_FOREIGN_KEY_REGEXP = /^\.cache\.ref\..+$/;
 

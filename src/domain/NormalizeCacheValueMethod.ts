@@ -1,4 +1,4 @@
-import { DomainObject } from 'domain-objects';
+import type { DomainObject } from 'domain-objects';
 
 /**
  * an object that can be serialized, for example with JSON.stringify
