@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.7](https://github.com/ehmpathy/with-cache-normalization/compare/v1.0.6...v1.0.7) (2025-11-30)
+
+
+### Bug Fixes
+
+* **practs:** bump to latest best ([#9](https://github.com/ehmpathy/with-cache-normalization/issues/9)) ([0e7feac](https://github.com/ehmpathy/with-cache-normalization/commit/0e7feac2470faf809c97f04ebb19b597cb7a445e))
+
 ## [1.0.6](https://github.com/ehmpathy/with-cache-normalization/compare/v1.0.5...v1.0.6) (2025-11-30)
 
 
