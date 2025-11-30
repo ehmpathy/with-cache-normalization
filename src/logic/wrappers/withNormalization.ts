@@ -1,7 +1,7 @@
 import { UnexpectedCodePathError } from '@ehmpathy/error-fns';
-import { SimpleAsyncCache, SimpleCache } from 'with-simple-cache';
+import type { SimpleAsyncCache, SimpleCache } from 'with-simple-cache';
 
-import {
+import type {
   NormalizeCacheValueMethod,
   SerializableObject,
 } from '../../domain/NormalizeCacheValueMethod';

@@ -4,9 +4,9 @@ import {
   deserialize,
   serialize,
 } from 'domain-objects';
-import { SimpleAsyncCache } from 'with-simple-cache';
+import type { SimpleAsyncCache } from 'with-simple-cache';
 
-import { SerializableObject } from '../../domain/NormalizeCacheValueMethod';
+import type { SerializableObject } from '../../domain/NormalizeCacheValueMethod';
 import {
   getCacheReferenceKeyForDomainObject,
   normalizeDomainObjectReferences,
@@ -36,7 +36,9 @@ describe('withNormalization', () => {
 
   const exampleStore: Record<string, any> = {};
   const cacheGetMock = jest.fn((key) => exampleStore[key]);
-  const cacheSetMock = jest.fn((key, value) => (exampleStore[key] = value));
+  const cacheSetMock = jest.fn(async (key, value) => {
+    exampleStore[key] = value;
+  });
   const cache: SimpleAsyncCache<SerializableObject> = {
     get: cacheGetMock,
     set: cacheSetMock,
@@ -175,9 +177,8 @@ describe('withNormalization', () => {
     );
 
     // should get the denormalized value
-    const found = await cacheOfStringWithSerializationAndNormalization.get(
-      '__key__',
-    );
+    const found =
+      await cacheOfStringWithSerializationAndNormalization.get('__key__');
     expect(found).toEqual({
       ship,
       color: 'green',

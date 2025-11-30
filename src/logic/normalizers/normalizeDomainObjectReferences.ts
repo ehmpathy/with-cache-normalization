@@ -1,7 +1,7 @@
 import { UnexpectedCodePathError } from '@ehmpathy/error-fns';
 import { DomainObject, getUniqueIdentifierSlug } from 'domain-objects';
 
-import {
+import type {
   NormalizeCacheValueMethod,
   NormalizeCacheValueMethodOutput,
   SerializableObject,

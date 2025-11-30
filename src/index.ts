@@ -1,11 +1,11 @@
-export {
+export type {
   NormalizeCacheValueMethod,
   NormalizeCacheValueMethodOutput,
   SerializableObject,
 } from './domain/NormalizeCacheValueMethod';
 export {
-  normalizeDomainObjectReferences,
   getCacheReferenceKeyForDomainObject,
+  normalizeDomainObjectReferences,
 } from './logic/normalizers/normalizeDomainObjectReferences';
 export {
   CACHE_NORMALIZATION_FOREIGN_KEY_REGEXP,

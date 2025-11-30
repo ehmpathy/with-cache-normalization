@@ -1,12 +1,14 @@
-import { SimpleAsyncCache } from 'with-simple-cache';
+import type { SimpleAsyncCache } from 'with-simple-cache';
 
-import { SerializableObject } from '../../domain/NormalizeCacheValueMethod';
+import type { SerializableObject } from '../../domain/NormalizeCacheValueMethod';
 import { withDenormalization } from './withDenormalization';
 
 describe('withDenormalization', () => {
   const exampleStore: Record<string, any> = {};
   const cacheGetMock = jest.fn((key) => exampleStore[key]);
-  const cacheSetMock = jest.fn((key, value) => (exampleStore[key] = value));
+  const cacheSetMock = jest.fn(async (key, value) => {
+    exampleStore[key] = value;
+  });
   const cache: SimpleAsyncCache<SerializableObject> = {
     get: cacheGetMock,
     set: cacheSetMock,
