@@ -4,7 +4,7 @@ import {
   deserialize,
   serialize,
 } from 'domain-objects';
-import { SimpleAsyncCache } from 'with-simple-caching';
+import { SimpleAsyncCache } from 'with-simple-cache';
 
 import { SerializableObject } from '../../domain/NormalizeCacheValueMethod';
 import {

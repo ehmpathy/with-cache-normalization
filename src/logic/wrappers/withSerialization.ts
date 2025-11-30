@@ -1,4 +1,4 @@
-import { SimpleAsyncCache, SimpleCache } from 'with-simple-caching';
+import { SimpleAsyncCache, SimpleCache } from 'with-simple-cache';
 
 import { SerializableObject } from '../../domain/NormalizeCacheValueMethod';
 

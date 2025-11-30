@@ -1,4 +1,4 @@
-import { SimpleAsyncCache } from 'with-simple-caching';
+import { SimpleAsyncCache } from 'with-simple-cache';
 
 import { withSerialization } from './withSerialization';
 

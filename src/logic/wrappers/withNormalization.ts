@@ -1,5 +1,5 @@
 import { UnexpectedCodePathError } from '@ehmpathy/error-fns';
-import { SimpleAsyncCache, SimpleCache } from 'with-simple-caching';
+import { SimpleAsyncCache, SimpleCache } from 'with-simple-cache';
 
 import {
   NormalizeCacheValueMethod,
@@ -53,7 +53,7 @@ export const withNormalization = <T extends SerializableObject>(
 
           // set the reference into the cache
           return cache.set(refKey, refValue as T, {
-            secondsUntilExpiration: referenceSecondsUntilExpiration,
+            expiration: { seconds: referenceSecondsUntilExpiration },
           });
         },
       );
